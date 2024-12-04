@@ -9,7 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
         'A': 8,
         'B+': 7,
         'B': 6,
-        'RA': 0 // "RA" indicates a failing grade
+        'C': 5,
+        'RA': 0 
     };
 
     // Function to create subject inputs dynamically
@@ -50,7 +51,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const cgpa = totalCredits > 0 ? (totalPoints / totalCredits).toFixed(2) : 0;
         document.getElementById('result').innerText = `Your CGPA is: ${cgpa}`;
 
-        // Add a note below the CGPA result
         const noteElement = document.getElementById('cgpa-note');
         noteElement.innerText = "[Note: This CGPA Calculation value will be same as in your Mark Sheet]";
     }
