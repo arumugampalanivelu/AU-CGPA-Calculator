@@ -1,0 +1,173 @@
+/* General Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Professional sans-serif font */
+    background-color: #f7f9fc; /* Subtle light blue background */
+    color: #333; /* Dark text for readability */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh; /* Ensure full-height background */
+    padding: 20px; /* Add padding for small screens */
+}
+
+/* Main Container Styling */
+.container {
+    max-width: 700px; /* Slightly larger width for better spacing */
+    width: 100%; /* Responsive width */
+    margin: 30px auto; /* Center the container */
+    padding: 25px; /* Add padding around the content */
+    background: #ffffff; /* Pure white background for content */
+    border-radius: 10px; /* Smooth rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Modern shadow for depth */
+}
+
+/* Heading Styles */
+h1 {
+    text-align: center; 
+    color: #003366; /* Dark blue color for branding */
+    font-size: 1.8em; /* Larger font size for the main heading */
+    margin-bottom: 20px; /* Space below the heading */
+    line-height: 1.4;
+}
+
+.container h1 img {
+    height: auto;
+    width: 80px; /* Fixed size for the logo */
+    display: block;
+    margin: 0 auto 5px auto; /* Reduce space below the logo */
+}
+
+
+/* Section Headings */
+h3 {
+    margin-top: 25px; /* Space above semester labels */
+    margin-bottom: 10px; /* Space below semester labels */
+    font-size: 1.2rem; /* Adjust font size for clarity */
+    color: #444; /* Neutral color for subheadings */
+    font-weight: 600; /* Slightly bold for emphasis */
+}
+
+/* Form Label Styling */
+label {
+    display: block; /* Block display for labels to stack vertically */
+    margin-bottom: 6px; /* Add space below the label */
+    font-size: 1rem; /* Uniform font size */
+    color: #222; /* Dark color for readability */
+    font-weight: 500; /* Slight emphasis */
+}
+
+/* Dropdown and Button Styling */
+select, button {
+    width: 100%; /* Full width for consistency */
+    padding: 10px 15px; /* Add padding for input elements */
+    margin-bottom: 15px; /* Spacing between inputs */
+    border: 1px solid #ccc; /* Subtle border for inputs */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem; /* Match font size to the label */
+    background-color: #f9f9f9; /* Light background for inputs */
+    color: #333; /* Dark text */
+}
+
+/* Dropdown Hover and Focus Effects */
+select:focus, button:focus {
+    outline: none;
+    border-color: #007bff; /* Blue border for focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3); /* Subtle glow effect */
+}
+
+/* Button Styling */
+button {
+    background-color: #007BFF; /* Modern blue color */
+    color: #fff; /* White text for contrast */
+    border: none; /* Remove default border */
+    font-weight: 600; /* Bold for emphasis */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+}
+
+/* Subject Group Styling */
+.subject {
+    margin-bottom: 20px; /* Maintain space between subjects */
+    padding-bottom: 10px; /* Space within each subject group */
+    /* Removed the border-bottom here to eliminate lines below each subject */
+}
+
+/* Line between Semesters */
+hr {
+    border: 1px solid #eaeaea; /* Subtle separator line for semesters */
+    margin: 20px 0; /* Add vertical spacing around the separator */
+}
+
+/* Calculate CGPA Button Styling */
+#calculate-btn {
+    margin-top: 15px; /* Add space above the "Calculate CGPA" button */
+}
+
+/* Radio Button Container Styling */
+.radio-container {
+    display: flex; /* Flexbox for horizontal arrangement */
+    flex-wrap: wrap; /* Allow wrapping for small screens */
+    gap: 15px; /* Add spacing between buttons */
+    margin-top: 8px; /* Add space above radio buttons */
+}
+
+.radio-container label {
+    display: flex;
+    align-items: center; /* Center radio and label text */
+    font-size: 0.95rem; /* Slightly smaller font size for radio labels */
+    color: #444; /* Neutral color for readability */
+}
+
+input[type="radio"] {
+    margin-right: 8px; /* Space between radio button and text */
+    accent-color: #007BFF; /* Modern blue for radio buttons */
+}
+
+/* Result and Note Styling */
+#result {
+    font-size: 1.6em; /* Large font size for result */
+    margin-top: 25px; /* Space above result text */
+    text-align: center; /* Center the result text */
+    color: #28a745; /* Green color for success message */
+    font-weight: bold;
+}
+
+#cgpa-note {
+    font-size: 0.85em; /* Slightly smaller font size */
+    color: #666; /* Neutral gray for secondary text */
+    margin-top: 10px; /* Space above the note */
+    text-align: center; /* Center-align the note */
+    line-height: 1.4; /* Better readability for small text */
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    h1 {
+        font-size: 1.6em; /* Slightly smaller font size for mobile */
+    }
+
+    button {
+        font-size: 0.95rem; /* Adjust button font size */
+    }
+
+    #result {
+        font-size: 1.4em; /* Adjust result size for mobile */
+    }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>CGPA Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>
+                <img src="anna.png" alt="Anna University Logo" id="logo">
+                Anna University<br>CGPA Calculator
+            </h1>
+        </header>
+        
+        <form id="cgpa-form">
+            <div class="form-group">
+                <label for="regulation">Select Regulation:</label>
+                <select id="regulation">
+                    <option value="">-- Select Regulation --</option>
+                    <option value="2017">2017</option>
+                    <option value="2021">2021</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="department">Select Department:</label>
+                <select id="department">
+                    <option value="">-- Select Department --</option>
+                    <option value="EEE">Electrical and Electronics Engineering (EEE)</option>
+                    <option value="ECE">Electronics and Communication Engineering (ECE)</option>
+                    <option value="CSE">Computer Science Engineering (CSE)</option>
+                    <option value="Civil">Civil Engineering</option>
+                    <option value="Mech">Mechanical Engineering</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="num-semesters">Select Number of Semesters:</label>
+                <select id="num-semesters">
+                    <option value="">-- Select Number of Semesters --</option>
+                    <option value="1">1 Semester</option>
+                    <option value="2">2 Semesters</option>
+                    <option value="3">3 Semesters</option>
+                    <option value="4">4 Semesters</option>
+                    <option value="5">5 Semesters</option>
+                    <option value="6">6 Semesters</option>
+                    <option value="7">7 Semesters</option>
+                    <option value="8">8 Semesters</option>
+                </select>
+            </div>
+
+            <button type="button" id="show-subjects-btn" class="btn">Show Subjects</button>
+
+            <div id="subjects-container"></div>
+
+            <button type="button" id="calculate-btn" class="btn" style="display: none;">Calculate CGPA</button>
+        </form>
+
+        <section>
+            <h2 id="result"></h2>
+            <p id="cgpa-note" style="text-align: center; color: #555;"></p>
+        </section>
+    </div>
+
+    <script src="subjects.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
